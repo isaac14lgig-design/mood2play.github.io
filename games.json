@@ -1,5 +1,4 @@
 [
-  /* ===== TRANQUILO (30) ===== */
   { "nombre": "Stardew Valley", "animo": "Tranquilo" },
   { "nombre": "Minecraft", "animo": "Tranquilo" },
   { "nombre": "Euro Truck Simulator 2", "animo": "Tranquilo" },
@@ -30,8 +29,7 @@
   { "nombre": "Townscaper", "animo": "Tranquilo" },
   { "nombre": "Yonder: The Cloud Catcher Chronicles", "animo": "Tranquilo" },
   { "nombre": "Planet Zoo", "animo": "Tranquilo" },
-
-  /* ===== CANSADO (30) ===== */
+  
   { "nombre": "Vampire Survivors", "animo": "Cansado" },
   { "nombre": "Brotato", "animo": "Cansado" },
   { "nombre": "Peglin", "animo": "Cansado" },
@@ -63,7 +61,6 @@
   { "nombre": "Celeste", "animo": "Cansado" },
   { "nombre": "Bugsnax", "animo": "Cansado" },
 
-  /* ===== ABURRIDO (30) ===== */
   { "nombre": "Grand Theft Auto V", "animo": "Aburrido" },
   { "nombre": "Just Cause 3", "animo": "Aburrido" },
   { "nombre": "Just Cause 4", "animo": "Aburrido" },
@@ -95,7 +92,6 @@
   { "nombre": "Skate 3", "animo": "Aburrido" },
   { "nombre": "Gang Beasts", "animo": "Aburrido" },
 
-  /* ===== MOTIVADO (30) ===== */
   { "nombre": "Elden Ring", "animo": "Motivado" },
   { "nombre": "Dark Souls III", "animo": "Motivado" },
   { "nombre": "Sekiro: Shadows Die Twice", "animo": "Motivado" },
@@ -127,7 +123,6 @@
   { "nombre": "The Witcher 3: Wild Hunt", "animo": "Motivado" },
   { "nombre": "Red Dead Redemption 2", "animo": "Motivado" },
 
-  /* ===== ESTRESADO (30) ===== */
   { "nombre": "DOOM (2016)", "animo": "Estresado" },
   { "nombre": "DOOM Eternal", "animo": "Estresado" },
   { "nombre": "Serious Sam 4", "animo": "Estresado" },
