@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mood2Play</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #0f172a;
+      color: white;
+      margin: 0;
+      padding: 24px;
+      text-align: center;
+    }
+    h1 { margin-bottom: 8px; }
+    select, button {
+      padding: 12px;
+      margin-top: 12px;
+      width: 100%;
+      max-width: 300px;
+      border-radius: 8px;
+      border: none;
+      font-size: 16px;
+    }
+    button {
+      background: #22c55e;
+      color: black;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .result {
+      margin-top: 24px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>🎮 Mood2Play</h1>
+<p>¿Cómo te sientes hoy?</p>
+
+<select id="mood">
+  <option value="Tranquilo">Tranquilo</option>
+  <option value="Cansado">Cansado</option>
+  <option value="Aburrido">Aburrido</option>
+  <option value="Motivado">Motivado</option>
+  <option value="Estresado">Estresado</option>
+</select>
+
+<br>
+<button onclick="pickGame()">Recomiéndame un juego</button>
+
+<div class="result" id="result"></div>
+
+<script>
+async function pickGame() {
+  const mood = document.getElementById("mood").value;
+  const res = await fetch("games.json");
+  const games = await res.json();
+  const filtered = games.filter(g => g.mood === mood);
+
+  if (filtered.length === 0) {
+    document.getElementById("result").innerText = "No hay juegos para ese estado 😢";
+    return;
+  }
+
+  const game = filtered[Math.floor(Math.random() * filtered.length)];
+  document.getElementById("result").innerText = "👉 Juega a: " + game.name;
+}
+</script>
+
+</body>
+</html>
